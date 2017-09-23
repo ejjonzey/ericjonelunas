@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
-    position: fixed;
+    position: float;
     bottom: 0;
     height: 8vh;
     width: 100vw;
