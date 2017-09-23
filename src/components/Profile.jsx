@@ -12,7 +12,7 @@ class Profile extends Component{
         justify-content: center;
         align-items: center;
         background-color: #66CCFF;
-        background-image: url("https://i.imgur.com/LKLv0SF.jpg");
+        background-image: url("");
         background-repeat: no-repeat;
         background-position: center;
         h1{
