@@ -8,7 +8,8 @@ class Project extends Component {
             <div>
                 <h1>{this.props.title}</h1>
                 <h3>{this.props.description}</h3>
-            <a href={this.props.deployedlink} target="_blank">Vist this site</a>    
+            <h4><a href={this.props.deployedlink} alt="image" target="_blank">Vist this site</a> </h4>   
+            <h4><a href={this.props.githublink} alt="image" target="_blank">Vist this site's repo</a></h4>    
             </div>
         );
     }
