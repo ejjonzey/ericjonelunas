@@ -16,13 +16,42 @@ const specs = [{
 }];
 
 class Specializations extends Component {
+  constructor(){
+    super();
+    this.state = {show: false}
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 2000);
+  }
+
   render(){
+    const bgStyles = {
+      background: 'linear-gradient(135deg, #66CCFF, #000000)',
+      padding: '36px',
+    };
+    const textStyles = {
+      color: 'white',
+      fontSize: '24px',
+      lineHeight: '36px',
+      fontFamily: 'sans-serif',
+      textAlign: 'center',
+    };
+    const bodyStyles = {
+        display: "flex",
+    };
     return (
-      <div className='container' id='special'>
+      <div style={bgStyles}>
+      <div style={textStyles}>
+      
         {specs.map((spec, i) => {
             return <Specialization key={i} language={spec.language} description={spec.description} image={spec.image}/>
         })}
       </div>
+      </div>
+      
     );
   }
 }
