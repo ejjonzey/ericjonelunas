@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactRevealText from 'react-reveal-text';
+import Img from 'react-image'
 
 
 
@@ -10,11 +11,13 @@ class Profile extends Component {
         super();
         this.state = { show: false };
       }
+
+      
     
       componentDidMount() {
         setTimeout(() => {
           this.setState({ show: true });
-        }, 2000);
+        }, 1000);
       }
     
       render() {
@@ -36,6 +39,7 @@ class Profile extends Component {
         };
         return (
             <div>
+              <img src={'https://i.imgur.com/LKLv0SF.jpg'}></img>
           <div style={bgStyles}>
             <div style={textStyles}>
             <ReactRevealText show={this.state.show} text="Eric Jonelunas" />
