@@ -37,14 +37,20 @@ class Profile extends Component {
         const bodyStyles = {
             display: "flex",
         };
+        const img ={
+          display: 'flex',
+          borderRadius: '50%',
+        };
         return (
             <div>
-              <img src={'https://i.imgur.com/LKLv0SF.jpg'}></img>
           <div style={bgStyles}>
             <div style={textStyles}>
+              <div className='splash-image'>
+            <img src={'https://i.imgur.com/LKLv0SF.jpg'}></img>
             <ReactRevealText show={this.state.show} text="Eric Jonelunas" />
             <ReactRevealText show={this.state.show} text="Web Developer" />
-            <ReactRevealText show={this.state.show} text="Disc Golfer" />          
+            <ReactRevealText show={this.state.show} text="Disc Golfer" />  
+            </div>        
         </div>
       </div>
       <div style={bodyStyles}>

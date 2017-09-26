@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Project from './Project';
+import styled from 'styled-components';
 
 const projects = [{
     project: 1,
@@ -40,12 +41,34 @@ const projects = [{
 
 class Projects extends Component{
     render(){
-        return(
-             <div className="container" id="projects">
-                 {projects.map((spec, i)=>{
+        const bgStyles = {
+          background: 'linear-gradient(135deg, #66CCFF, #000000)',
+          padding: '36px',
+        };
+        const textStyles = {
+          color: 'white',
+          fontSize: '24px',
+          lineHeight: '36px',
+          fontFamily: 'sans-serif',
+          textAlign: 'center',
+        };
+        const bodyStyles = {
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            flexDirection: 'row',
+            textAlign: 'center',
+        };
+        return (
+        <div style={bgStyles}>
+        <div style={textStyles}>
+        <div style={bodyStyles}>
+                {projects.map((spec, i)=>{
                      return <Project key={i} project={spec.project} title={spec.title} description={spec.description} deployedlink={spec.deployedlink} githublink={spec.githublink} complete={spec.complete}/>
-                 })}
-             </div>
+                })}
+        </div>
+    </div>
+</div>         
         )
     }
 }
