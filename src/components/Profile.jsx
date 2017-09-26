@@ -57,7 +57,7 @@ class Profile extends Component {
             </div>        
             <IntroductionDiv>
               Hello, and awesome to meet you. I am a full stack web developer currently looking for new opportunities. <br/>
-              I have spent the last four months working on MEN stack, MERN stack, and React on Rails.  <br/>
+              I have spent the last four months learning MEN stack, MERN stack, and React on Rails.  <br/>
               
             </IntroductionDiv> 
         </div>
