@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import ContactForm from './ContactForm';
 import styled from 'styled-components';
 import ReactRevealText from 'react-reveal-text';
-import Img from 'react-image'
+import Img from 'react-image';
+
+
 
 const SplashImage = styled.div`
 
@@ -59,9 +62,11 @@ class Profile extends Component {
               Hello, and awesome to meet you. I am a full stack web developer currently looking for new opportunities. <br/>
               I have spent the last four months learning MEN stack, MERN stack, and React on Rails.  <br/>
               
-            </IntroductionDiv> 
+            </IntroductionDiv>
+            <div className="row contact">
+            <ContactForm />
+            </div>   
         </div>
-              
         </div>
         
         );
