@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Project from './Project';
 import styled from 'styled-components';
+import ReactRevealText from 'react-reveal-text';
+
 
 const projects = [{
     project: 1,
@@ -40,6 +42,19 @@ const projects = [{
 }]
 
 class Projects extends Component{
+    constructor() {
+        super();
+        this.state = { show: false };
+      }
+
+      
+    
+      componentDidMount() {
+        setTimeout(() => {
+          this.setState({ show: true });
+        }, 1000);
+      }
+      
     render(){
         const bgStyles = {
           background: 'linear-gradient(135deg, #66CCFF, #000000)',

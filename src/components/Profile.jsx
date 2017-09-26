@@ -3,7 +3,16 @@ import styled from 'styled-components';
 import ReactRevealText from 'react-reveal-text';
 import Img from 'react-image'
 
+const SplashImage = styled.div`
 
+`
+
+const IntroductionDiv = styled.div`
+  display: flex,
+  flex-direction: column;
+  text-align: center;
+  color: white;
+`
 
 
 class Profile extends Component {
@@ -34,29 +43,27 @@ class Profile extends Component {
           letterSpacing: '1em',
           paddingLeft: '1em', // to compensate for letter spacing
         };
-        const bodyStyles = {
-            display: "flex",
-        };
-        const img ={
-          display: 'flex',
-          borderRadius: '50%',
-        };
+       
         return (
             <div>
           <div style={bgStyles}>
             <div style={textStyles}>
-              <div className='splash-image'>
-            <img src={'https://i.imgur.com/LKLv0SF.jpg'}></img>
+            <SplashImage>
+            <img src={'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAA0VAAAAJDFmMzU5YTk2LTA5OWYtNGVkNC05YTRmLTcyNzM5ZDY5MTA5Zg.jpg'}></img>
+            </SplashImage>
             <ReactRevealText show={this.state.show} text="Eric Jonelunas" />
             <ReactRevealText show={this.state.show} text="Web Developer" />
-            <ReactRevealText show={this.state.show} text="Disc Golfer" />  
+            <ReactRevealText show={this.state.show} text="Disc Golfer" /> <br/>
             </div>        
+            <IntroductionDiv>
+              Hello, and awesome to meet you. I am a full stack web developer currently looking for new opportunities. <br/>
+              I have spent the last four months working on MEN stack, MERN stack, and React on Rails.  <br/>
+              
+            </IntroductionDiv> 
         </div>
-      </div>
-      <div style={bodyStyles}>
-
-      </div>
-      </div>
+              
+        </div>
+        
         );
       }
     }
