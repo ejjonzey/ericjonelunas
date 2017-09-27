@@ -18,13 +18,17 @@ const FooterWrapper = styled.div`
     .no {
         font-size: 6px;
     }
+    a:hover{
+        color: red;
+    }
 `
 
 class GlobalFooter extends Component {
     render() {
         return (
             <FooterWrapper>
-                <p>&copy;2017 Eric Jonelunas</p><p className="IKindaKnowWhatImDoing"></p>
+                <p>&copy;2017 Eric Jonelunas</p>
+                <a href="mailto:eric.jonelunas@gmail.com">Email Me</a> 
             </FooterWrapper>
         );
     }
