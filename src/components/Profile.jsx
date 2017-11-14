@@ -10,6 +10,7 @@ const SplashImage = styled.div`
 const IntroductionDiv = styled.div`
   display: flex,
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   color: white;
 `
@@ -56,9 +57,8 @@ class Profile extends Component {
             <ReactRevealText show={this.state.show} text="Disc Golfer" /> <br/>
             </div>        
             <IntroductionDiv>
-              Hello, and awesome to meet you. I am a full stack web developer currently looking for new opportunities. <br/>
-              I have spent the last four months learning MEN stack, MERN stack, and React on Rails.  <br/>
-              
+                 Hi!  I am a full stack web developer based in Atlanta.  I focus on creating quick and responsive applications that make use of the latest technologies available.
+                 Throughout my entire career I have worked in fields with project completion goals.  I want to continue to work under these conditions, but also contribute something new to society.  Web development has allowed me learn of new areas that I have started to focus on.  Accessability for users with unique challenges for each of them has unlimited possibilities for new solutions.
             </IntroductionDiv> 
         </div>
               

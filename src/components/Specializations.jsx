@@ -47,10 +47,10 @@ class Specializations extends Component {
             return <Specialization key={i} language={spec.language} description={spec.description} image={spec.image}/>
         })}
       </div>
-      </div>
-      </div>
-    );
-  }
+    </div>
+  </div>
+  );
+}
 }
 
 export default Specializations;
