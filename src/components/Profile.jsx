@@ -36,7 +36,7 @@ class Profile extends Component {
           padding: '36px',
         };
         const textStyles = {
-          color: 'white',
+          color: '#ffffff',
           fontSize: '24px',
           lineHeight: '36px',
           fontFamily: 'sans-serif',
@@ -46,6 +46,7 @@ class Profile extends Component {
         };
        
         return (
+          <IntroductionDiv>
             <div>
           <div style={bgStyles}>
             <div style={textStyles}>
@@ -56,14 +57,13 @@ class Profile extends Component {
             <ReactRevealText show={this.state.show} text="Web Developer" />
             <ReactRevealText show={this.state.show} text="Disc Golfer" /> <br/>
             </div>        
-            <IntroductionDiv>
                  Hi!  I am a full stack web developer based in Atlanta.  I focus on creating quick and responsive applications that make use of the latest technologies available.
-                 Throughout my entire career I have worked in fields with project completion goals.  I want to continue to work under these conditions, but also contribute something new to society.  Web development has allowed me learn of new areas that I have started to focus on.  Accessability for users with unique challenges for each of them has unlimited possibilities for new solutions.
-            </IntroductionDiv> 
+                 Throughout my entire career I have worked in fields with project completion goals.  I want to continue to work under these conditions, but also contribute something new to society.  
+                 Web development has allowed me learn of new areas that I have started to focus on.  Accessability for users with unique challenges for each of them has unlimited possibilities for new solutions. 
         </div>
               
         </div>
-        
+        </IntroductionDiv>
         );
       }
     }
