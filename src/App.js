@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from 'styled-components';
 import GlobalNav from './components/GlobalNav';
 import GlobalFooter from './components/GlobalFooter';
-import Profile from './components/Profile.jsx';
+import About from './components/About.jsx';
 import Specializations from './components/Specializations.jsx';
 import Projects from './components/Projects';
 
@@ -14,7 +14,7 @@ class App extends Component {
       <Router>
       <div className="App">
         <GlobalNav/>
-        <Route exact path='/' component={Profile} />
+        <Route exact path='/' component={About} />
         <Route exact path='/Specializations' component={Specializations} />
         <Route exact path='/Projects' component={Projects} />
         <GlobalFooter/>
