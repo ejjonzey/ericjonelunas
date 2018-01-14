@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from 'styled-components';
-import GlobalNav from './components/GlobalNav';
+import Header from './components/Header';
 import GlobalFooter from './components/GlobalFooter';
 import About from './components/About.jsx';
 import Specializations from './components/Specializations.jsx';
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Router>
       <main className="App">
-        <GlobalNav/>
+        <Header />
           <About />
           <Specializations />
           <Projects />
