@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import GlobalFooter from './components/GlobalFooter';
 import About from './components/About.jsx';
-import Specializations from './components/Specializations.jsx';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
 
 
@@ -15,7 +15,7 @@ class App extends Component {
       <main className="App">
         <Header />
           <About />
-          <Specializations />
+          <Skills />
           <Projects />
         <GlobalFooter/>
       </main>

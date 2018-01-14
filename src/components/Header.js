@@ -35,11 +35,11 @@ const Header = () => (
       </div>
     </nav>
     <div className='content'>
-      <h1 className='title'>Jose Dario Sanchez</h1>
-      <h3 className='subtitle'>Frontend Developer</h3>
+      <h1 className='title'>Eric Jonelunas</h1>
+      <h3 className='subtitle'>Fullstack Developer</h3>
     </div>
     <div className='triangle'></div>
   </section>
 )
 
-export default Header
+export default Header;

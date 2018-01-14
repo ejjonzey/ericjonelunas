@@ -195,7 +195,7 @@ section {
       text-align: right; }
     .header .navbar a, .header .navbar .link {
       position: relative;
-      color: #FFFFFF;
+      color: black;
       cursor: pointer; }
       .header .navbar a .bra, .header .navbar a .ket, .header .navbar .link .bra, .header .navbar .link .ket {
         position: absolute;
