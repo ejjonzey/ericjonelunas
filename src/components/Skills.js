@@ -35,12 +35,9 @@ const Skills = () => (
         <div className='tools'>
           <LazyLoad height={100}><span className='tools-icon' /></LazyLoad>
           <h5>Tools</h5>
-          <h6>Photoshop</h6>
           <h6>Terminal</h6>
           <h6>React Router</h6>
           <h6>Firebase</h6>
-          <h6>Chrome DevTools</h6>
-          <h6>Jekyll</h6>
         </div>
         <div className='misc'>
           <LazyLoad height={100}><span className='puzzle-icon' /></LazyLoad>
@@ -50,20 +47,12 @@ const Skills = () => (
           <h6>Single Page Apps</h6>
           <h6>Git</h6>
         </div>
-        <div className='academic'>
-          <LazyLoad height={100}><span className='academic-icon' /></LazyLoad>
-          <h5>University Education</h5>
-          <h6>Python</h6>
-          <h6>C / C++</h6>
-          <h6>Mathematica</h6>
-          <h6>Java</h6>
-        </div>
       </div>
       <div className='download-container'>
         <a
           className='download-link'
           href={resume}
-          download='Jose-Dario-Sanchez-(resume).pdf'
+          download='resume.pdf'
         >
           <button className='download-button'>Download Resume</button>
         </a>

@@ -30,7 +30,7 @@
       background-size: cover;
     }
     @media only screen and (min-width: 1200px)  {
-      background: url('../Media/Images/background.jpg') no-repeat center center;
+      background: url('/Media/Images/background.jpg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -48,7 +48,7 @@
       width: 100%;
   
       display: grid;
-      grid-template-columns: 1fr repeat(2, 100px);
+      grid-template-columns: 1fr repeat(3, 100px);
   
       padding: 5vh 5vw 5vh 5vw;
   
@@ -63,7 +63,7 @@
         cursor: pointer;
   
         .bra, .ket {
-          position: relative;
+          position: absolute;
   
           opacity: 0;
           transition: 0.25s;
